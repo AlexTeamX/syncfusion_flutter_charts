@@ -1069,7 +1069,7 @@ void calculatePointSeriesIndex(
         final double right = region.right + padding;
         final double top = region.top - padding;
         final double bottom = region.bottom + padding;
-        final Rect paddedRegion = Rect.fromLTRB(left, top, right, bottom);
+        final Rect paddedRegion = Rect.fromLTRB(left, 0, right, bottom + 30);
         if (paddedRegion.contains(position!)) {
           pointIndex = regionRect[4].visiblePointIndex;
         }
